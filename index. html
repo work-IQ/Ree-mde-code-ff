@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF REWARD ENGINE | FREE REDEEM CODES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ffbe0b;
+            --secondary: #fb5607;
+            --accent: #00f2fe;
+            --bg: #0a0a0c;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Rajdhani', sans-serif; }
+
+        body {
+            background-color: var(--bg);
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://w0.peakpx.com/wallpaper/549/712/HD-wallpaper-garena-free-fire-logo-neon-free-fire-neon-logo-neon-games-free-fire.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 2px solid var(--secondary);
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 10px var(--secondary);
+            font-weight: 900;
+            letter-spacing: 3px;
+        }
+
+        /* Main Section */
+        .container {
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            height: calc(100vh - 160px);
+            overflow-y: auto;
+        }
+
+        .main-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 15px;
+            background: rgba(0,0,0,0.5);
+            border: 2px solid var(--accent);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            outline: none;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Stylish Buttons */
+        .btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            background: linear-gradient(45deg, var(--secondary), var(--primary));
+            color: black;
+            box-shadow: 0 0 15px rgba(251, 86, 7, 0.4);
+        }
+
+        .btn:active { transform: scale(0.95); }
+
+        /* Hacker/Gamer Terminal */
+        #terminal-box {
+            display: none;
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-align: left;
+            background: black;
+            padding: 10px;
+            border-radius: 5px;
+            height: 80px;
+            overflow: hidden;
+        }
+
+        /* Redeem Section */
+        #redeem-section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        /* Codes Display */
+        #codes-container {
+            display: none;
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        .code-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .code-card span { color: var(--primary); font-weight: bold; }
+
+        /* Bottom Navbar */
+        .navbar {
+            position: fixed;
+            bottom: 0; width: 100%;
+            background: #000;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            border-top: 2px solid var(--secondary);
+        }
+
+        .nav-item {
+            color: #666;
+            font-size: 1.2rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .nav-item.active { color: var(--primary); text-shadow: 0 0 8px var(--primary); }
+
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--secondary);
+            border-radius: 50%;
+            width: 30px; height: 30px;
+            animation: spin 1s linear infinite;
+            display: none; margin: 10px auto;
+        }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">FF REWARD ENGINE</div>
+
+    <div class="container">
+        <div class="main-card">
+            <!-- Phase 1: Connect -->
+            <div id="phase-connect">
+                <p style="margin-bottom: 15px; color: #ccc;">Enter Your Free Fire UID to Synchronize</p>
+                <input type="number" id="ffid" class="input-box" placeholder="UID: 109283745">
+                <button class="btn" onclick="startConnect()">Connect Server</button>
+                <div class="loader" id="main-loader"></div>
+                <div id="terminal-box"></div>
+            </div>
+
+            <!-- Phase 2: Redeem Button -->
+            <div id="redeem-section">
+                <h3 style="color: var(--accent); margin-bottom: 15px;">CONNECTION ESTABLISHED!</h3>
+                <p style="font-size: 0.8rem; margin-bottom: 15px;">Unlock the codes by bypassing the reward link (2 Times Required)</p>
+                <button class="btn" style="background: var(--accent);" onclick="handleRedeemRedirect()">Generate Redeem Code</button>
+                <p id="click-status" style="margin-top: 10px; font-size: 0.9rem; color: var(--primary);">Step: 1/2</p>
+            </div>
+
+            <!-- Phase 3: Display Codes -->
+            <div id="codes-container">
+                <h2 style="color: var(--primary); text-align: center; margin-bottom: 15px;">GOOGLE PLAY CODES</h2>
+                <div class="code-card"><span>GPLAY-K8X2-90A1</span><i class="fas fa-copy"></i></div>
+                <div class="code-card"><span>GPLAY-PL22-M98Z</span><i class="fas fa-copy"></i></div>
+                <div class="code-card"><span>GPLAY-HJK1-882P</span><i class="fas fa-copy"></i></div>
+                <div class="code-card"><span>GPLAY-77XQ-BVC9</span><i class="fas fa-copy"></i></div>
+                <div class="code-card"><span>GPLAY-991A-MNX2</span><i class="fas fa-copy"></i></div>
+                <button class="btn" style="margin-top: 15px;" onclick="location.reload()">Get More Codes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="navbar">
+        <div class="nav-item active"><i class="fas fa-home"></i><p style="font-size: 0.6rem;">HOME</p></div>
+        <div class="nav-item" onclick="alert('Redeem Section Locked. Connect ID first.')"><i class="fas fa-gift"></i><p style="font-size: 0.6rem;">REDEEM</p></div>
+        <div class="nav-item"><i class="fas fa-user"></i><p style="font-size: 0.6rem;">PROFILE</p></div>
+    </div>
+
+    <script>
+        let clickCount = 0;
+        const directLink = "https://www.effectivegatecpm.com/g4d5kg4qaf?key=406777624267375092c77834ed0b8246";
+
+        function startConnect() {
+            const id = document.getElementById('ffid').value;
+            if (id.length < 5) {
+                alert("Please enter a valid FF UID!");
+                return;
+            }
+
+            document.getElementById('main-loader').style.display = 'block';
+            document.getElementById('terminal-box').style.display = 'block';
+            const terminal = document.getElementById('terminal-box');
+            
+            const logs = [
+                "> Accessing Garena Server...",
+                "> Encrypting User ID...",
+                "> Bypassing Reward Firewall...",
+                "> Searching available vouchers...",
+                "> Connection Successful!"
+            ];
+
+            let i = 0;
+            const interval = setInterval(() => {
+                const p = document.createElement('div');
+                p.innerText = logs[i];
+                terminal.prepend(p);
+                i++;
+                if (i >= logs.length) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        document.getElementById('phase-connect').style.display = 'none';
+                        document.getElementById('redeem-section').style.display = 'block';
+                    }, 1000);
+                }
+            }, 1000);
+        }
+
+        function handleRedeemRedirect() {
+            clickCount++;
+            
+            // Check current status
+            if (clickCount === 1) {
+                window.open(directLink, '_blank');
+                document.getElementById('click-status').innerText = "Step: 2/2 - CLICK AGAIN";
+            } else if (clickCount === 2) {
+                window.open(directLink, '_blank');
+                document.getElementById('click-status').innerText = "Step: VERIFYING...";
+                setTimeout(() => {
+                    document.getElementById('redeem-section').style.display = 'none';
+                    document.getElementById('codes-container').style.display = 'block';
+                }, 2000);
+            }
+        }
+
+        // Home/Profile Alerts
+        document.querySelectorAll('.nav-item').forEach((item, index) => {
+            if(index !== 0) {
+                item.addEventListener('click', () => {
+                   // Functionality for navigation
+                });
+            }
+        });
+    </script>
+</body>
+</html>
